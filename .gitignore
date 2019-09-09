@@ -1,0 +1,31 @@
+#tapes
+*.TAP
+*.tap
+*.TPC
+*.tpc
+
+#disks
+*.DSK
+*.dsk
+*.IMG
+*.img
+*.iso
+*.ISO
+*.ufs
+*.UFS
+
+#archives
+*.tar
+*.TAR
+*.bz2
+*.BZ2
+*.gz
+*.GZ
+*.zip
+*.ZIP
+
+#panda doest belong in this repo
+PDP10/panda
+#other like NVRAM
+*nvram*
+*.bin
