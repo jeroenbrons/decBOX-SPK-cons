@@ -22,7 +22,8 @@ while true; do
     "2" "VAX-11" \
     "3" "PDP-10" \
     "4" "PDP-11" \
-    "5" "console lines" \
+    "5" "connect to Infoserver" \
+    "6" "console lines" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -56,6 +57,9 @@ while true; do
       bash PDP11.sh
       ;;
     5 )
+      telnet 127.0.0.1 4000
+      ;;
+    6 )
       bash conssrv.sh
       ;;
   esac
